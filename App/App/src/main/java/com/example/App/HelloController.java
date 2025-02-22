@@ -18,5 +18,10 @@ public class HelloController {
         return  "Hello " + name + " from BridgeLabz";
     }
 
+    @PostMapping("/UC4")
+    public  String showHelloNameWithPost(@RequestBody UserDTO user){
+        return "Hello " + user.getFirstName() + " " + user.getLastName() + " from BridgeLabz";
+    }
+
 
 }
