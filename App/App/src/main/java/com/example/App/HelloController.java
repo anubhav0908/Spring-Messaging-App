@@ -13,4 +13,10 @@ public class HelloController {
         return "Hello " + name + " from BridgeLabz";
     }
 
+    @GetMapping("/UC3/{name}")
+    public String sayHelloWithPath(@PathVariable String name) {
+        return  "Hello " + name + " from BridgeLabz";
+    }
+
+
 }
